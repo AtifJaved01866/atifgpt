@@ -295,7 +295,7 @@ export function ChatInterface() {
                   What can I help with?
                 </h1>
                 <p className="text-muted-foreground text-xl leading-relaxed">
-                  I'm AtifGPT, your AI assistant powered by Google Gemini. 
+                  I'm AtifGPT, your AI assistant developed by Atif Javed. 
                   Start a conversation by asking me anything!
                 </p>
               </div>
