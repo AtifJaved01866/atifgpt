@@ -261,39 +261,41 @@ export function ChatSidebar({
           </div>
         </ScrollArea>
         
-        {/* Social Links Footer */}
-        <div className="p-4 border-t border-sidebar-border">
-          <div className="flex items-center justify-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/iatifjaved/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors"
-            >
-              <ExternalLink className="w-3 h-3" />
-              LinkedIn
-            </a>
-            <a
-              href="https://instagram.com/iatifjaved"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors"
-            >
-              <ExternalLink className="w-3 h-3" />
-              Instagram
-            </a>
-            <a
-              href="https://atifjvd.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors"
-            >
-              <ExternalLink className="w-3 h-3" />
-              Portfolio
-            </a>
-          </div>
-        </div>
-      </div>
+       import { Linkedin, Instagram, Globe } from "lucide-react"
+
+{/* Social Links Footer */}
+<div className="p-4 border-t border-sidebar-border">
+  <div className="flex items-center justify-center gap-6">
+    <a
+      href="https://www.linkedin.com/in/iatifjaved/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-xs text-sidebar-foreground/60 hover:text-white transition-colors"
+    >
+      <Linkedin className="w-4 h-4 text-white" />
+      LinkedIn
+    </a>
+    <a
+      href="https://instagram.com/iatifjaved"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-xs text-sidebar-foreground/60 hover:text-white transition-colors"
+    >
+      <Instagram className="w-4 h-4 text-white" />
+      Instagram
+    </a>
+    <a
+      href="https://atifjvd.vercel.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-xs text-sidebar-foreground/60 hover:text-white transition-colors"
+    >
+      <Globe className="w-4 h-4 text-white" />
+      Portfolio
+    </a>
+  </div>
+</div>
+
 
       {/* Modals */}
       {selectedChatId && modalType && (
