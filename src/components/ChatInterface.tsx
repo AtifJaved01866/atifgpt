@@ -286,31 +286,22 @@ export function ChatInterface() {
         ) : (
           // Enhanced Welcome screen
           <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/20">
-  <div className="text-center max-w-2xl mx-auto px-6">
-    <div className="mb-12">
-      {/* Logo wrapper */}
-      <div className="w-24 h-24 bg-gradient-to-br from-white via-gray-100 to-gray-200 rounded-3xl mx-auto mb-8 flex items-center justify-center shadow-2xl">
-        <img 
-          src="/logo.png" 
-          alt="AtifGPT Logo" 
-          className="w-16 h-16 object-contain" 
-        />
-      </div>
-
-      {/* Heading */}
-      <h1 className="text-4xl font-bold text-foreground mb-4 tracking-tight">
-        What can I help with?
-      </h1>
-
-      {/* Subtitle */}
-      <p className="text-muted-foreground text-xl leading-relaxed">
-        I'm AtifGPT, your AI assistant developed by Atif Javed. 
-        Start a conversation by asking me anything!
-      </p>
-    </div>
-  </div>
-</div>
-
+            <div className="text-center max-w-2xl mx-auto px-6">
+              <div className="mb-12">
+                <div className="w-24 h-24 bg-gradient-to-br from-white via-gray-100 to-gray-200 rounded-3xl mx-auto mb-8 flex items-center justify-center shadow-2xl">
+                  <Sparkles className="w-12 h-12 text-gray-800" />
+                </div>
+                <h1 className="text-4xl font-bold text-foreground mb-4 tracking-tight">
+                  What can I help with?
+                </h1>
+                <p className="text-muted-foreground text-xl leading-relaxed">
+                  I'm AtifGPT, your AI assistant developed by Atif Javed. 
+                  Start a conversation by asking me anything!
+                </p>
+              </div>
+              
+            </div>
+          </div>
         )}
       </div>
     </div>
