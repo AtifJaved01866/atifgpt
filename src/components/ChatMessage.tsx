@@ -54,7 +54,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
               "flex items-center gap-2 mb-2",
               isUser ? "justify-end" : "justify-start"
             )}>
-              <span className="text-sm font-semibold text-foreground">
+              <span className="text-sm font-semibold text-foreground w-[100px]">
                 {isUser ? "You" : "AtifGPT"}
               </span>
               <span className="text-xs text-muted-foreground">
