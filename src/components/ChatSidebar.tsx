@@ -105,7 +105,7 @@ export function ChatSidebar({
           
           <Button 
             onClick={onNewChat}
-            className="w-full bg-white hover:bg-white/90 text-black border-0 transition-smooth rounded-xl h-11 font-medium"
+            className="w-full bg-white hover:bg-white/90 text-black hover:text-black border-0 transition-smooth rounded-xl h-11 font-medium"
             variant="outline"
           >
             <Plus className="w-4 h-4 mr-2" />
