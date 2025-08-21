@@ -96,9 +96,7 @@ export function ChatSidebar({
         {/* Header with Logo */}
         <div className="p-6 border-b border-sidebar-border">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
+            <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
             <div>
               <h1 className="text-lg font-bold text-sidebar-foreground">AtifGPT</h1>
               <p className="text-xs text-sidebar-foreground/60">Developed by Atif Javed</p>
