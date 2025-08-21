@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* AtifGPT Dark Theme - Main Colors */
+    --background: 220 13% 8%;              /* Very dark grey main area */
+    --foreground: 0 0% 98%;                /* Almost white text */
+
+    --card: 220 13% 12%;                   /* Slightly lighter dark for cards */
+    --card-foreground: 0 0% 95%;           
+
+    --popover: 220 13% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 100%;                  /* Pure white for primary elements */
+    --primary-foreground: 220 13% 8%;      
+
+    --secondary: 220 13% 15%;              /* Medium dark grey */
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 220 13% 12%;                  /* Muted backgrounds */
+    --muted-foreground: 0 0% 65%;          /* Muted text */
+
+    --accent: 220 13% 18%;                 /* Accent color - lighter grey */
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 18%;                 /* Subtle borders */
+    --input: 220 13% 15%;                  /* Input backgrounds */
+    --ring: 0 0% 80%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Pure black like ChatGPT */
+    --sidebar-background: 0 0% 4%;         /* Almost pure black */
+    --sidebar-foreground: 0 0% 85%;        /* Light grey text */
+    --sidebar-primary: 0 0% 100%;          /* White for active states */
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 220 13% 12%;         /* Hover states */
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 13% 12%;
+    --sidebar-ring: 0 0% 80%;
+
+    /* Chat specific colors */
+    --chat-user-bg: 220 13% 15%;          /* User message background */
+    --chat-assistant-bg: 220 13% 10%;     /* Assistant message background */
+    --chat-hover: 220 13% 20%;            /* Hover states */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 13% 8%) 0%, hsl(220 13% 12%) 100%);
+    --gradient-sidebar: linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 6%) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 4px 20px -8px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 20px hsl(0 0% 100% / 0.1);
+
+    /* Animation */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-nunito;
+    overflow: hidden; /* Prevent scrolling on body for full-height layout */
+  }
+}
