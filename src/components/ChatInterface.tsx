@@ -289,7 +289,7 @@ export function ChatInterface() {
             <div className="text-center max-w-2xl mx-auto px-6">
               <div className="mb-12">
                 <div className="w-24 h-24 bg-gradient-to-br from-white via-gray-100 to-gray-200 rounded-3xl mx-auto mb-8 flex items-center justify-center shadow-2xl">
-                  <Sparkles className="w-12 h-12 text-gray-800" />
+                   <img src="/logo.png" alt="AtifGPT Logo" className="w-12 h-12 object-contain"/>
                 </div>
                 <h1 className="text-4xl font-bold text-foreground mb-4 tracking-tight">
                   What can I help with?
